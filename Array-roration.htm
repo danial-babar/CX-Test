@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function arrayRotation(arr) {
+        const rotArr = [arr[arr.length - 1]]
+        for (i = 0; i < arr.length - 1; i++) {
+            rotArr[i + 1] = arr[i]
+        }
+        return rotArr;
+    }
+
+
+    const arr = [3, 8, 9, 7, 6];
+    document.write(arrayRotation(arr));
+
+</script>
+
+<body>
+
+</body>
+
+</html>
